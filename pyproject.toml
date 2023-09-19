@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "real"
+version = "0.1.0"
+description = ""
+authors = ["konfortes <konfortes@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+requests = "^2.31.0"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint]
+disable=[
+    "missing-module-docstring",
+    "missing-class-docstring",
+    "missing-function-docstring",
+    "too-few-public-methods",
+    "import-error",
+]
